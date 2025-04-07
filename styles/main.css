@@ -1,51 +1,85 @@
+
 body {
   background-color: darkslategray !important; /* Dark Gray Background */
-  color: #f3e6d7; /* Off White Text */
+  color: #ff9fec; /* Off White Text */
   font-family: 'Playfair Display SC', 'Times New Roman', Times, serif; /* Apply the Playfair Display SC font */
+  position: relative; /* For positioning elements */
 }
 
 h1 {
-  color: #ff9fec; /* Purple color for headings */
+  color: #ff9fec; /* Pink color for headings */
 }
 
 p {
-  color: #f3e6d7; /* Off white for paragraphs */
+  color: rgb(255, 244, 230); /* Off white for paragraphs */
 }
 
 a {
   color: #ff9fec; /* Light pink for links */
 }
 
-/* Adding a background image with opacity */
-body::before {
+/* Header background image with adjusted position */
+.header-container::before {
   content: ''; /* Necessary for the pseudo-element */
-  position: absolute; /* Position it over the body */
-  top: 0;
+  position:absolute; /* Position it over the header */
+  top: 0; /* Start from the very top */
   left: 0;
   right: 0;
-  bottom: 0;
+  height: 100%; /* Cover exactly the header height */
   background-image: url('../images/wildflower.jpeg'); /* Path to wildflower image */
-  background-size: cover; /* Ensure the image covers the entire body */
-  background-position: ; /* Center the image */
-  opacity: 0.3; /* Lower opacity */
+  background-size: cover; /* Ensure the image covers the entire area */
+  background-position: center 0%; /* Position from center with no vertical offset */
   z-index: -1; /* Put the image behind the content */
 }
-
-/* Responsive Media Queries */
-@media only screen and (min-width: 920px) {
-  .container {
-    /* some layout rules */
-  }
+/* Header Container Styles */
+.header-container {
+  background-color: transparent;
+  padding: 20px 20px 50px 20px; /* Increased bottom padding */
+  text-align: center;
+  position: relative; /* For positioning the pseudo-element */
+  overflow: hidden; /* Ensure the image doesn't spill out */
+  margin-bottom: 0; /* Remove margin to avoid gaps */
 }
 
-@media only screen and (max-width: 919px) {
-  .container {
-    /* some layout rules */
-  }
+
+/* Header Layout  */
+
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff9fec;
+  background-color: darkslategray;
+  margin: 200px 0px 100px 0px;
+  display: inline-block;
+  padding: 0px 100px 0px 80px;
 }
 
-@media only screen and (max-width: 400px) {
-  .container {
-    /* some layout rules */
-  }
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 200px 0px;
+  width: 100%;
 }
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  padding: 10px;
+  display: inline-flex;
+}
+
+.navbar li a {
+  color: #ff9fec;
+  transition: color 0.3s ease;
+  padding: 10px 10px;
+  background-color: darkslategray;
+}
+
+.navbar li a:hover {
+  color: rgb(255, 244, 230);
+}
+
+
