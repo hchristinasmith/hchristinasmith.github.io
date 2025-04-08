@@ -1,9 +1,12 @@
 
 body {
-  background-color: darkslategray !important; /* Dark Gray Background */
+  background-color: rgb(255, 250, 243) !important; /* Off White  Background */
   color: #ff9fec; /* Off White Text */
   font-family: 'Playfair Display SC', 'Times New Roman', Times, serif; /* Apply the Playfair Display SC font */
   position: relative; /* For positioning elements */
+  text-align: center;
+  margin: 0px;
+  padding: 0px
 }
 
 h1 {
@@ -11,75 +14,297 @@ h1 {
 }
 
 p {
-  color: rgb(255, 244, 230); /* Off white for paragraphs */
+  color: darkslategray; /* Off white for paragraphs */
 }
+
 
 a {
   color: #ff9fec; /* Light pink for links */
 }
 
-/* Header background image with adjusted position */
-.header-container::before {
-  content: ''; /* Necessary for the pseudo-element */
-  position:absolute; /* Position it over the header */
-  top: 0; /* Start from the very top */
-  left: 0;
-  right: 0;
-  height: 100%; /* Cover exactly the header height */
-  background-image: url('../images/wildflower.jpeg'); /* Path to wildflower image */
-  background-size: cover; /* Ensure the image covers the entire area */
-  background-position: center 0%; /* Position from center with no vertical offset */
-  z-index: -1; /* Put the image behind the content */
-}
 /* Header Container Styles */
 .header-container {
-  background-color: transparent;
-  padding: 20px 20px 50px 20px; /* Increased bottom padding */
+  background-color: rgb(255, 250, 243);
   text-align: center;
   position: relative; /* For positioning the pseudo-element */
   overflow: hidden; /* Ensure the image doesn't spill out */
-  margin-bottom: 0; /* Remove margin to avoid gaps */
 }
-
 
 /* Header Layout  */
 
-
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: bold;
   color: #ff9fec;
-  background-color: darkslategray;
-  margin: 200px 0px 100px 0px;
-  display: inline-block;
-  padding: 0px 100px 0px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px; /* Space between image and text */
+  border-top: 5px solid darkslategray;
+  padding-top: 10px;
+
 }
+
+/* Logo Image */
+.logo-image {
+  width: 40px; /* Set the size of the image */
+  height: auto; /* Maintain the aspect ratio */
+  margin-right: 0px; /* Add some space between the image and the text */
+}
+
 
 .navbar {
   display: flex;
   justify-content: center;
+  font-weight: bold;
   align-items: center;
-  margin: 0px 0px 200px 0px;
+  margin: 0px 0px 0px 0px;
   width: 100%;
+  border-bottom: 5px solid darkslategray;
+  padding-bottom: 60px;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 50px;
-  padding: 10px;
+  gap: 100px;
   display: inline-flex;
 }
 
 .navbar li a {
   color: #ff9fec;
   transition: color 0.3s ease;
-  padding: 10px 10px;
-  background-color: darkslategray;
+  text-decoration: none;
+  padding: 0px 75px;
+  margin-top: 20px;
+  border-top: 5px solid darkslategray;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  border-bottom: 5px solid darkslategray;
+  padding-bottom: 10px;
+  border-left: 5px solid darkslategray;
+  padding-left: 10px;
+  margin-right: 20px;
+  border-right: 5px solid darkslategray;
+  padding-right: 10px;
+  border-radius: 8%;
 }
 
 .navbar li a:hover {
-  color: rgb(255, 244, 230);
+  color: darkslategray;
+  text-decoration: underline; /* Underline*/
 }
 
 
+/* Kia Ora Taiao! About Section */
+
+.about { 
+  position: relative;
+  color: darkslategray;
+  border-bottom: 5px solid darkslategray;
+  padding: 200px 0px 200px 0px;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../images/wildflower.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 40%;
+  z-index: -1;
+}
+
+.about h2 {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 3rem;
+  color: rgb(255, 250, 243);
+  position: relative;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  margin-bottom: 0px;
+}
+
+.about p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: rgb(255, 250, 243);
+  line-height: 1.6;
+  position: relative;
+  display: block;
+  border-radius: 5px;
+  margin-top: 0px;
+  padding: 0px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Project Section */
+
+.projects {
+  color: rgb(255, 250, 243);
+  font-size: x-large;
+  text-align: left;
+  padding: 15px 20px 15px 15px;
+  border-top: 5px solid darkslategray;
+  padding-top: 15px;
+  padding-bottom: 50px;
+  background-color: rgba(47, 79, 79, 0.693);
+  margin: 0;
+}
+
+.blog-description {
+font-size: medium;
+font-family: 'Playfair Display';
+
+
+}
+
+.blog-image {
+  width: 150px; /* Set the size of the image */
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.project-grid {
+  list-style: none; /* removes bullet points */
+  padding: 10px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* responsive columns */
+  gap: 50px;
+  max-width: 1500px;
+}
+
+.project-grid li {
+  background-color: #ffebf7;
+  font-size: 20px;
+  border: 2px solid darkslategray;
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-grid li:hover {
+  background-color: #ff9fec;
+  text-decoration: underline; /* Underline*/
+}
+
+.project-grid a {
+  text-decoration: none;
+  color: darkslategray;
+  font-weight: bold;
+  display: block;
+}
+
+
+
+/* Table */
+
+.table-heading {
+  text-align: center;
+  color: darkslategray;
+  margin-top: 0px;
+  border-top: 3px solid darkslategray;
+  padding-top: 10px;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+}
+
+.skills-table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  color: #fff;
+  border: none;
+}
+
+.skills-table th,
+.skills-table td {
+  padding: 12px 20px;
+  text-align: left;
+  border-bottom: 3px solid darkslategray;
+  border-top: 3px solid darkslategray;
+  border-right: 3px solid darkslategray;
+  border-left:3px solid darkslategray;
+}
+
+      /* Table Body */
+
+.skills-table td {
+  color: darkslategray;
+  font-family: 'Playfair Display', serif;
+}
+
+    
+     /* Table Heading */
+
+.skills-table th {
+  background-color: #ffebf7;
+  color: darkslategray;
+  font-weight: bold;
+}
+
+.skills-table tr:hover {
+  background-color: #ff9fec;
+  transition: background-color 0.3s ease;
+  text-decoration: underline; /* Underline*/
+}
+
+/* Connect */
+.connect {
+  margin-top: 20px;
+  border-top: 3px solid darkslategray;
+  padding: 20px 0px 0px 0px; /* Unified padding */
+  text-align: center; /* Center the content by default */
+  color: darkslategray;
+  
+}
+
+.connect a {
+  color: #ff9fec; /* Pink color for the links */
+  text-decoration: none; /* Optional: Remove underline */
+  font-weight: bold; /* Optional: Make links stand out */
+  transition: color 0.3s ease; /* Optional: Smooth color change on hover */
+}
+
+.connect a:hover {
+  color: darkslategray; /* Change the link color on hover */
+  text-decoration: underline; /* Underline*/
+}
+
+
+/* Footer */
+
+.site-footer {
+  margin-top: 20px;
+  border-bottom: 3px solid darkslategray;
+  padding: 20px 20px; /* Unified padding */
+  text-align: right; /* Center the content by default */
+}
+
+
+/* widescreen displays */
+
+@media only screen and (min-width: 920px) {
+  .container { /* some layout rules */ }
+}
+
+/* tablets */
+@media only screen and (max-width: 919px) {
+  .container { /* some layout rules */ }
+}
+
+/* phones */
+@media only screen and (max-width: 400px) {
+  .container { /* some layout rules */ }
+}
