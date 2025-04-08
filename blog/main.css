@@ -484,6 +484,34 @@ margin-left: 20px;
 margin-top: 0px;
 }
 
+.ivse table {
+text-align: left;
+justify-content: center;
+color: darkslategray;
+margin: 0 auto; /* Centers the table horizontally */
+border-collapse: collapse; /* Optional: makes borders cleaner */
+border: 5px darkslategray solid ;
+}
+
+.ivse th, .ivse td {
+  border: 2px solid darkslategrey; /* This makes cell borders thicker too */
+  padding: 10px;
+}
+
+.eq-table-contents {
+font-family: 'Playfair Display';
+}
+
+.eq-list li{ 
+color: darkslategray;
+text-align: left;
+font-family: 'Playfair Display';
+}
+
+.eq-list {
+margin-bottom: 100px;
+
+}
 
 /* Learning Plan */
 
