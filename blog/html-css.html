@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="styles/main.css">
+ <!-- Preconnect to Google Fonts and Fonts Static Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Link to Playfair Display SC font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  
+  <!-- Header -->
+  </head>
+ <body>
+  <div class="header-container">
+    <header >
+      <div class="logo">
+        <img src="images/3-flowers.svg" alt="logo" class="logo-image">
+        <h1>Hannah's Workspace</h1>
+        <img src="images/3-flowers.svg" alt="logo" class="logo-image">
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Reflections">Reflections</a></li>
+          <li><a href="#About">About Me</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+<!-- Research Question -->
+<section class="rq1">
+  <div class="question-heading">
+
+  <h1>Classes vs. IDs: Best Practices</h1>
+    <p>In HTML and CSS, classes and IDs are both used to target and style elements, but they have different purposes and rules. </p>
+  </div>
+
+  <div class="comparison-wrapper">
+    <div class="classes">
+      <h2>
+        <span id="sc-font">Classes</span>
+        <span id="regular-font">(class=):</span>
+      </h2>          
+      <ul> 
+        <li> Used to style multiple elements</li>
+        <li> Can apply the same class to multiple elements</li>
+        <li> In CSS, it's writen with a dot (.)</li>
+    </div>
+
+    <div class="id">
+      <h2>
+        <span id="idsc-font">ID's</span>
+        <span id="idregular-font">(id=):</span>
+      </h2>
+      <ul> 
+        <li> Used to uniquely identify a single element.</li>
+        <li> Only use an ID once per page</li>
+        <li> In CSS, it's written with a hash (#)</li>
+      </ul>
+
+    </div>
+  </div>
+</section>
+
+<!-- Comparison Table-->
+<section class="comparison-table">
+  <h2 class="comp-table-heading">Key Differences:</h2>
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th>Class</th>
+        <th>ID</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Prefix</td>
+        <td>. (dot)</td>
+        <td># (hash)</td>
+      </tr>
+      <tr>
+        <td>Uniqueness</td>
+        <td>Reusable</td>
+        <td>Must be unique</td>
+      </tr>
+      <tr>
+        <td>Specificty</td>
+        <td>Lower</td>
+        <td>Higher</td>
+      </tr>
+      <tr>
+        <td>Usage count</td>
+        <td>Multiple Elements</td>
+        <td>Only one Element</td>
+      </tr>
+      <tr>
+        <td>Node.js</td>
+        <td>Learning</td>
+        <td>. (dot)</td>
+      </tr>      
+    </tbody>
+  </table>
+</section>
+    
