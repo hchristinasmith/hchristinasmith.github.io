@@ -166,8 +166,6 @@ a {
 .blog-description {
 font-size: medium;
 font-family: 'Playfair Display';
-
-
 }
 
 .blog-image {
@@ -223,6 +221,13 @@ font-family: 'Playfair Display';
   padding-bottom: 10px;
 }
 
+.skills-table caption {
+color: darkslategray;
+font-size: x-large;
+padding-bottom: 15px;
+
+}
+
 .skills-table {
   width: 80%;
   margin: 0 auto;
@@ -240,7 +245,9 @@ font-family: 'Playfair Display';
   border-top: 3px solid darkslategray;
   border-right: 3px solid darkslategray;
   border-left:3px solid darkslategray;
+
 }
+
 
       /* Table Body */
 
@@ -425,6 +432,8 @@ padding-bottom: 100px;
   background-color: #ffffff;
   color: #fff;
   border: none;
+  border-radius: 8px;
+
 }
 
 .comp-table th,
@@ -513,10 +522,277 @@ margin-bottom: 100px;
 
 }
 
-/* Learning Plan */
+/* Sprint Three Blog - JavaScript */
+
+.sprint-three-blog {
+  text-align: left;
+  margin: 0 2rem;
+}
+
+.sprint-three-blog h2 {
+  font-size: 60px;
+  text-align: center;
+  padding-bottom: 50px;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.sprint-three-blog h2::after {
+  content: '';
+  position: absolute;
+  left: -100vw;
+  right: -100vw;
+  bottom: 0;
+  height: 5px;
+  background-color: darkslategray;
+}
+
+.sprint-three-blog summary {
+  font-size: 30px;
+  text-align: left;
+  padding-bottom: 50px;
+  position: relative;
+  margin-bottom: 2rem;
+  border-radius: 8px;;
+  border: 5px solid darkslategrey;
+  padding: 1.5rem;
+  background-color: rgba(47, 79, 79, 0.529);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 30px 30px 30px 30px;
+  color: #ffebf7;
+}
+
+.comp-table {
+  list-style: none; /* removes bullet points */
+  padding: 10px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* responsive columns */
+  gap: 50px;
+  max-width: 1500px;
+}
 
 
+.comp-table ul {
+  background-color: #ffebf7;
 
+}
+
+.comp-table li {
+  background-color: #ffebf7;
+  font-size: 20px;
+  border: 5px solid darkslategray;
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comp-table h3 {
+  font-family: "Playfair Display SC";
+  color: darkslategray;
+  font-size: 35px;
+  }
+
+.comp-table h4 {
+font-family: "Playfair Display SC";
+color: darkslategray;
+
+}
+
+.comp-table p {
+  font-family: "Playfair Display";
+  
+  }
+
+/*JavaScript Concepts*/
+
+.js-concepts section {
+  border-top: 5px solid rgba(47, 79, 79, 0.419);
+  padding: 20px;
+  margin: 25px 50px 40px 50px;
+  color: #ffebf7;
+  
+}
+
+.js-concepts h4 {
+  font-size: 50px;
+  color: darkslategrey;
+
+}
+
+.js-concepts p, ul, h5 {
+  font-size: 20px;
+  color: darkslategrey;
+  font-family: 'Playfair Display';
+}
+
+
+.js-concepts img {
+  margin: 0 auto;
+  width: 80%; /* Or use px like 400px */
+  max-width: 300px; /* Optional: prevent it from getting too big */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+}
+
+/* Accessing Data */
+
+.accessing-data ul {
+  font-size: 30px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* place the list items side by side */
+  justify-content: space-between; /* equal space between items */
+}
+
+.accessing-data pre {
+  background-color: #ecdce5;
+  border-radius: 8px;
+  padding: 10px;
+  color: darkslategrey;
+  font-size: x-large;
+}
+
+.accessing-data li {
+  font-family: 'Playfair Display SC';
+  font-size: 35px;
+  width: 45%;
+  padding: 20px;
+  border: 5px solid darkslategrey;
+  border-radius: 8px;
+
+  
+}
+
+.accessing-data p {
+  font-size: 25px;
+
+}
+
+.ad-comp-table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: x-large;
+}
+
+
+.ad-comp-table-heading {
+  text-align: center;
+  color: darkslategray;
+  margin-top: 0px;
+  padding-top: 10px;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+}
+
+.ad-comp-table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+
+}
+
+.ad-comp-table th,
+.ad-comp-table td {
+  padding: 12px 20px;
+  text-align: left;
+  border-bottom: 3px solid darkslategray;
+  border-top: 3px solid darkslategray;
+  border-right: 3px solid darkslategray;
+  border-left:3px solid darkslategray;
+}
+
+      /* Table Body */
+
+.ad-comp-table td {
+  color: darkslategray;
+  font-family: 'Playfair Display', serif;
+}
+
+
+     /* Table Heading */
+
+.ad-comp-table th {
+  background-color: #ffebf7;
+  color: darkslategray;
+  font-weight: bold;
+}
+
+.ad-comp-table tr:hover {
+  background-color: #ffc6f4;
+  transition: background-color 0.3s ease;
+  text-decoration: underline; /* Underline*/
+}
+
+
+.functions pre {
+  background-color: #fff0f8;
+  border-radius: 8px;
+  padding: 10px;
+  color: darkslategrey;
+  font-size: x-large;
+}
+.functions ul{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.functions li {
+  background: #ffebf7;
+  padding: 15px;
+  border-radius: 10px;
+  border: 5px solid darkslategrey;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.functions li p {
+  margin: 5px 0 0;
+}
+
+.function-pair {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 30px;
+  border: 5px solid darkslategrey;
+  border-radius: 8px;
+
+}
+
+.functionsbs {
+  flex: 1;
+  min-width: 500px;
+
+}
+
+.functionsbs pre {
+  background-color: #f4f4f4;
+  padding: 0px;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+#function-footer {
+  text-align: center;
+  font-size: x-large;
+}
 /* widescreen displays */
 
 @media only screen and (min-width: 920px) {

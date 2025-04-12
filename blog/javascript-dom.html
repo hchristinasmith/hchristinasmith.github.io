@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap" rel="stylesheet" />
+
+    <title>JavaScript for Beginners - Hannah's Blog</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="header-container">
+      <header>
+        <div class="logo">
+          <img src="images/3-flowers.svg" alt="logo" class="logo-image" />
+          <h1>Hannah's Workspace</h1>
+          <img src="images/3-flowers.svg" alt="logo" class="logo-image" />
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Reflections">Reflections</a></li>
+            <li><a href="#About">About Me</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <main class="sprint-three-blog">
+      <section>
+        <h2>JavaScript Explained</h2>
+
+        <!-- Comparison Table -->
+        <details>
+          <summary>JavaScript / HTML / CSS</summary>
+          <ul class="comp-table">
+            <li>
+              <h4><strong>HTML = Structure</strong></h4>
+              <p><strong>HTML</strong> (HyperText Markup Language) structures the content on a webpage, defining elements like headings, paragraphs, links, and images.</p>
+            </li>
+            <li>
+              <h4><strong>CSS = Style</strong></h4>
+              <p><strong>CSS</strong> (Cascading Style Sheets) controls the layout and visual appearance of the content, such as colours, fonts, spacing, and positioning.</p>
+            </li>
+            <li class="js">
+              <h4><strong>JavaScript = Behaviour</strong></h4>
+              <p><strong>JavaScript</strong> adds interactivity and functionality to a webpage, allowing for dynamic content changes, event handling, and interaction with users, like form validation or animations.</p>
+            </li>
+          </ul>
+        </details>
+
+        <!-- House Analogy -->
+        <details>
+          <summary>Think of HTML, CSS & JavaScript like a house...</summary>
+          <ul class="comp-table">
+            <li>
+              <h4><strong>HTML = Structure</strong></h4>
+              <p>The walls, doors, windows, and floors. It's the blueprint and bones.</p>
+            </li>
+            <li>
+              <h4><strong>CSS = Interior Design</strong></h4>
+              <p>Paint colors, tile, furniture, curtains. It makes your house look good.</p>
+            </li>
+            <li class="js">
+              <h4><strong>JavaScript = Electricity & Plumbing</strong></h4>
+              <p>It makes the lights turn on when you flip a switch, the fridge run, the garage door open. It adds functionality.</p>
+            </li>
+          </ul>
+        </details>
+
+        <!-- JavaScript Concepts -->
+        <details class="js-concepts">
+          <summary>JavaScript Concepts</summary>
+          <section class="control-flow">
+            <h4>Control Flow</h4>
+            <p>Control flow is the direction your code takes when it runs. It's like choosing which road to take based on traffic lights or road signs.</p>
+            <p>By default, code runs <strong>top to bottom</strong>, one line after another.</p>
+            <p>But sometimes, you want code to make decisions, do different things based on conditions, or repeat tasks. This is where control flow tools come in.</p>
+          </section>
+
+          <section>
+            <h4>Loops</h4>
+            <p>A loop says:</p>
+            <p>"Do this over and over until I tell you to stop"</p>
+            <p>It's how we <strong>repeat code</strong> without writing it again and again.</p>
+            <ul>
+              <h5>Most loops have 3 key parts:</h5>
+              <li><strong>Start Point</strong> - Where does the loop begin?</li>
+              <li><strong>Condition</strong> - When should the loop <strong>keep going</strong>?</li>
+              <li><strong>Update</strong> - What changes after each loop</li>
+              <p>Example:</p>
+              <img src="images/loop.png" alt="loop-img" class="loop-image" />
+              <li>"let i = 0" → Start at 0</li>
+              <li>"i < 5" → Keep going while i is less than 5</li>
+              <li>"i++" → After each loop, add 1 to i</li>
+            </ul>
+          </section>
+
+          <section>
+            <h4>The DOM</h4>
+            <p><strong>The DOM</strong> (Document Object Model) is a <strong>structured representation of your HTML</strong> — like a map of everything on the page — that JavaScript can <strong>see and change</strong>.</p>
+            <p>The DOM turns your webpage into a <strong>tree of nodes</strong>. Each HTML element becomes an <strong>object</strong> that JS can interact with.</p>
+            <p>Example in HTML format:</p>
+            <img src="images/TheDOMhtml.png" alt="DOM HTML" class="DOMhtml-image" />
+            <p>Example in DOM Tree Format:</p>
+            <img src="images/TheDOMTree.png" alt="DOM Tree" class="DOMtree-image" />
+
+            <table class="skills-table">
+              <caption><strong>Common DOM Methods:</strong></caption>
+              <thead>
+                <tr>
+                  <th>Method</th>
+                  <th>What It Does</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>getElementById('id')</code></td>
+                  <td>Finds an element by its <code>id</code></td>
+                </tr>
+                <tr>
+                  <td><code>querySelector('selector')</code></td>
+                  <td>Finds the first element that matches a CSS selector</td>
+                </tr>
+                <tr>
+                  <td><code>querySelectorAll('selector')</code></td>
+                  <td>Gets all elements that match</td>
+                </tr>
+                <tr>
+                  <td><code>textContent</code></td>
+                  <td>Get/set the text inside an element</td>
+                </tr>
+                <tr>
+                  <td><code>style.property</code></td>
+                  <td>Change an element's CSS directly</td>
+                </tr>
+                <tr>
+                  <td><code>addEventListener('event', fn)</code></td>
+                  <td>Listen for clicks, keypresses, etc.</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </details>
+
+        <!-- Accessing Data -->
+        <details>
+          <summary>Accessing Data from Arrays vs Objects</summary>
+          <section class="accessing-data">
+            <ul>
+              <li>
+                <h4><strong>Arrays []</strong></h4>
+                <p>An <strong>arrray</strong> is a data structure used to store <strong>a list of values</strong> in a specific order. Each item in the array is called an <strong>element</strong>, and it can be accessed by its <strong>index number</strong>, starting from 0.</p>
+                <p><em>Example: A list of NZ Native Tree Names</em></p>
+                <pre><code>const nativeTrees = ["Kauri", "Kahikatea", "Pōhutukawa"];
+
+                  console.log(nativeTrees[0]); // "Kauri"
+                  console.log(nativeTrees[2]); // "Pōhutukawa"</code></pre>
+                  <p><strong>When to use:</strong> When you want to store a list and the order matters, or you want to loop through it.</p>
+             </li>
+              <li>
+                <h4><strong>Objects {}</strong></h4>
+                <p><strong>Definition:</strong> An <strong>object</strong> is a collection of key-value pairs. Each key (like "name" or "region") maps to a specific value.</p>
+                <p><em>Example: A single NZ native tree with details:</em></p>
+                <pre><code>const tree = {
+                  name: "Kauri",
+                  height: "50m",
+                  region: "North Island",
+                  status: "Threatened"
+                };
+                
+                console.log(tree.name);       // "Kauri"
+                console.log(tree["status"]); // "Threatened"</code></pre>
+                
+                  <p><strong>When to use:</strong> When you want to describe an item with multiple attributes.</p>
+                </li>
+            </ul>
+
+                  <table class="ad-comp-table">
+                    <caption>Array vs Objects</caption>
+                    <tr>
+                      <th>Feature</th>
+                      <th>Array</th>
+                      <th>Object</th>
+                    </tr>
+                    <tr>
+                      <td>Structure</td>
+                      <td>Ordered list of values</td>
+                      <td>Key-value pairs</td>
+                    </tr>
+                    <tr>
+                      <td>Access method</td>
+                      <td>By index (e.g. nativeTrees[0])</td>
+                      <td>By key (e.g. tree.name)</td>
+                    </tr>
+                    <tr>
+                      <td>Syntax</td>
+                      <td>[] (square brackets)</td>
+                      <td>{} (curly braces)</td>
+                    </tr>
+                    <tr>
+                      <td>Ideal for</td>
+                      <td>Lists, sequences</td>
+                      <td>Structured data with named properties</td>
+                    </tr>
+                    <tr>
+                      <td>Example</td>
+                      <td>"Pōhutukawa"</td>
+                      <td>tree["status"] → "Threatened"</td>
+                    </tr>
+                  </table>
+                  <p>You can also<strong>combine arrays and objects </strong>to represent a collection of native trees:</p>
+                  <pre><code>const ngahere = [
+                  { name: "Kauri", height: "50m", region: "North Island" },
+                  { name: "Rimu", height: "35m", region: "South Island" },
+                  { name: "Pōhutukawa", height: "20m", region: "Coastal areas" }
+                ];
+                
+                console.log(ngahere[1].name);   // "Rimu"
+                console.log(ngahere[2].region); // "Coastal areas"</code></pre>
+                
+                  <p>This is super useful when working with real-world data, like nature tracking apps, databases, or games!</p>
+                
+          </section>
+        </details>
+
+      <!-- Functions -->
+        <details>
+          <summary>Functions</summary>
+          <section class="functions">
+            <p><strong>Functions </strong>are like little machines in programming: they are self-contained blocks of code that perform a specific task or set of tasks. You give them input (called arguments or parameters), and they return an output (or result). Functions allow you to break down complex tasks into smaller, more manageable pieces of code, which makes your program easier to read, maintain, and debug.</p>
+
+            <p><strong>Functions are helpful:</strong></p>
+            <ul>
+              <li>
+                <strong>Reusability:</strong>
+                <p>Once you define a function, you can use it multiple times throughout your program without needing to rewrite the same code. This reduces repetition and keeps your code cleaner.</p>
+              </li>
+              <li>
+                <strong>Modularity:</strong>
+                <p>Functions allow you to split your program into logical, smaller parts. Each function can perform one task, making the code easier to understand and work with.</p>
+              </li>
+              <li>
+                <strong>Abstraction:</strong>
+                <p>Functions help hide the complexity of a task. You don't need to know the details of how a function works to use it—just the inputs and what it returns.</p>
+              </li>
+              <li>
+                <strong>Maintainability:</strong>
+                <p>If a piece of code needs to change, you only need to update the function itself rather than every place it's used in your program. This makes updating or debugging your code much easier.</p>
+              </li>
+              <li>
+                <strong>Testing and Debugging:</strong>
+                <p>By testing individual functions, you can isolate and pinpoint problems more effectively than if you were testing a massive block of code all at once.</p>
+              </li>
+            </ul>
+
+
+            
+              <p><strong>For Example:</strong></p>
+              <div class="function-pair">
+              <div class="functionsbs">
+                <pre><code>function addNumbers(a, b) {
+              return a + b;
+            }
+            
+            const result = addNumbers(3, 5);
+            console.log(result); // Output will be 8</code></pre>
+              </div>
+              
+              <p class="functionsbs">
+                *Here, <code>addNumbers</code> is a function that takes two inputs (<code>a</code> and <code>b</code>), adds them together, and returns the result. Instead of writing the addition code every time you need it, you can simply call the <code>addNumbers</code> function.
+              </p>
+            </div>
+            
+
+            <p id='function-footer'>Functions are a fundamental part of programming that help keep your code organized, efficient, and easier to maintain!</p>
+          
+          </section>
+        </details>
+
+
+    <!-- Connect Section -->
+    <h3 class="connect">
+      Connect with me on <a href="https://github.com/hchristinasmith" target="_blank">GitHub</a> 
+      OR 
+      <a href="mailto:hchrstinasmith@gmail.com">Email Me</a>
+    </h3>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p class="signature">&copy; 2025 Hannah's Workspace.</p>
+    </footer>
+  </body>
+</html>
