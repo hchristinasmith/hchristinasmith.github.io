@@ -911,6 +911,11 @@ iframe {
   background-color: #ffc6f4;
 }
 
+.reflection-content {
+text-align: left;
+padding: 40px;
+}
+
 
 /* widescreen displays */
 
